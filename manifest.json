@@ -1,0 +1,13 @@
+{
+	"name": "Ignore Email Confirmation",
+	"version": "1.0",
+	"description": "Ignores the red messages that say you haven't confirmed your email on twitter.",
+	"manifest_version": 2,
+	"permissions": [
+		"activeTab"
+	],
+	"content_scripts": [{
+			"matches": ["https://twitter.com/*"],
+			"js": ["removeBanner.js"]
+		}]
+}
